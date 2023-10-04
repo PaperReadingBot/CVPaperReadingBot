@@ -5,6 +5,7 @@
 - Learn a 3D-aware GAN model to generate portraits that include upper body.
 
 ### Method
+![](./framework.png)
 - Main idea
   - For each query point sampled from the rays:
     observed space -> neutral pose space -> neutral expression space -> color & opacity
