@@ -1,0 +1,1 @@
+[AniPortraitGAN: Animatable 3D Portrait Generation from 2D Image Collections](https://arxiv.org/pdf/2309.02186.pdf) [[note](https://github.com/PaperReadingBot/CVPaperReadingBot/blob/main/2025/Oct/1003_ani_portrait_gan/note.md)]
