@@ -11,11 +11,13 @@
   - The color produced by Point-E cannot be used in both initialization or the SDS loss.
 - Compactness Densification
   <img src='./densification.png' width='400'>
+
   - Instead of using the gradient magnitude to see if new Gaussians need to be produced, this paper uses a heuristic manner.
   - Given two Gaussians G1 and G2 and their radius r1 and r2, their distance r12. If r12 > (r1 + r2), then add a Gaussian between G1 and G2.
 
 ## Framework
 <img src='./framework.png' width='800'>
+
 - Initialization.
   - Get a point cloud by Point-E, only point positions are used.
 - Stage I.
