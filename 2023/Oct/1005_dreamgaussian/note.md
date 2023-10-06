@@ -21,8 +21,8 @@
   - Split the 3D space in range (-1,1) to a $`16\times 16\times 16`$ grid.
   - For each block, further divide it to a $`8\times 8\times 8`$ blocks.
   - Accumulate the density of all Gaussians falling into each smaller block by
-
-    <img src='./eq_density.png' width='400'>
+    
+    <img src='https://github.com/PaperReadingBot/CVPaperReadingBot/blob/63a532e64cf5a3a49ec7804d9cc2e78a6d9293cd/2023/Oct/1005_dreamgaussian/eq_density.png' width=400>
 
   - This will produce a $`128\times 128\times 128`$ density grid. Then apply marching cubes to extract the final mesh.
 - Texture UV extraction.
@@ -33,7 +33,7 @@
   - Denoise it to get a fine RGB image.
   - Use the fine RGB image as sudo supervision by:
 
-    <img src='./eq_mse.png' width='200'>
+    <img src='https://github.com/PaperReadingBot/CVPaperReadingBot/blob/63a532e64cf5a3a49ec7804d9cc2e78a6d9293cd/2023/Oct/1005_dreamgaussian/eq_mse.png' width='200'>
 
 ## TL;DR
 - A algorithm to extract a mesh from 3D Gaussians.
