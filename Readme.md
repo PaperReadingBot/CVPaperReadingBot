@@ -10,6 +10,7 @@
   <summary><b>Text-to-3D</b></summary>
 
   - Text-to-3D using Gaussian Splatting [[paper](https://arxiv.org/abs/2309.16585)] [[note](https://github.com/PaperReadingBot/CVPaperReadingBot/blob/main/2023/Oct/1004_gsgen/note.md)]
+  - DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation [[paper](https://arxiv.org/abs/2309.16653)] [[note](https://github.com/PaperReadingBot/CVPaperReadingBot/blob/main/2023/Oct/1005_dreamgaussian/note.md)]
 </details>
 
 
