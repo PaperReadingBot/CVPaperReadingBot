@@ -13,4 +13,11 @@
   - DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation [[paper](https://arxiv.org/abs/2309.16653)] [[note](https://github.com/PaperReadingBot/CVPaperReadingBot/blob/main/2023/Oct/1005_dreamgaussian/note.md)]
 </details>
 
+## Correspondence
+<details>
+  <summary><b>Correspondence in Videos</b></summary>
+
+  - Tracking Everything Everywhere All at Once [[paper](https://arxiv.org/abs/2306.05422)] [[note](https://github.com/PaperReadingBot/CVPaperReadingBot/blob/main/2023/Oct/1009_track_everything/note.md)]
+</details>
+  
 
