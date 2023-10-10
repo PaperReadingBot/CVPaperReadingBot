@@ -29,3 +29,4 @@
   - Then sample $K$ points on the ray denoted as $\{x_i^k\}, mapping all these points to timestep $j$ by the method discussed above. At the same time, the color and opacity of these points can be computed as $F_{\theta}(M(x_i^k, \Phi_i))$.
   - The corresponding 3D point of $p_i$ is computed as $\hat{x_j}={\Sigma}_{k=1}^{K}{T_k}{\alpha_k}{x_j^k}$, where ${T_k}={\Pi}_{l=1}^{k-1}(1-\alpha_l)$.
 
+$\hat{x}_j$
