@@ -28,3 +28,18 @@
   - First shoot a ray from orthographic camera, i.e., the ray is perpendicular to the image plane, this is under the assumption that camera motion and scene motion is entangled.
   - Then sample $K$ points on the ray denoted as $\{x_i^k}$, mapping all these points to timestep $j$ by the method discussed above. At the same time, the color and opacity of these points can be computed as $F_{\theta}(M(x_i^k, \Phi_i))$.
   - The corresponding 3D point of $p_i$ is computed as:
+
+    <img src='./eq2.png' width='300'>
+  - Finally, the corresponding pixel $p_j$ can be obtained by orthographically projecting $\hat{x}_j$ onto the image plane.
+
+### Loss Functions
+- Flow supervision (optical flow has been heuristically cleaned):
+- RGB supervision
+- Regularization
+  - Penalize large change in nearby timestep.
+
+## TL;DR
+- Use dynamic quasi-3D to model video motion. The benefits are:
+  - The canonical volume essentially acts as a "storage" of all pixels. Thus pixels won't get lost when they are occluded in some timesteps. It also acts as a soft constraint by sharing the canonical volume across timesteps.
+  - The depth of volume representation encodes the spatial relationship of all pixels, which also helps handling occlusion.
+  - The bijective mapping is 3D, thus it models motion in the z-axis as well.
