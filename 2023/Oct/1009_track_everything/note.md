@@ -29,7 +29,7 @@
   - Then sample $K$ points on the ray denoted as $\{x_i^k}$, mapping all these points to timestep $j$ by the method discussed above. At the same time, the color and opacity of these points can be computed as $F_{\theta}(M(x_i^k, \Phi_i))$.
   - The corresponding 3D point of $p_i$ is computed as:
 
-    <img src='./eq2.png' width='300'>
+    <img src='https://github.com/PaperReadingBot/CVPaperReadingBot/blob/9ae92c4268c0cee91df5d9305655fbda9e415c84/2023/Oct/1009_track_everything/eq2.png' width='300'>
   - Finally, the corresponding pixel $p_j$ can be obtained by orthographically projecting $\hat{x}_j$ onto the image plane.
 
 ### Loss Functions
