@@ -20,5 +20,12 @@
 ## Bijective Local-canonical Mapping
 - The goal of this module is to map any point $x_i$ from the local volume at timestep $i$ to the canonical space.
 - This is implemented as an INN (Invertible Neural Network): $u = \tau_i(x_i)$.
-- So that a point $x_i$ from timestep $i$ can be mapped to timestep $j$ by: $x_j = tau_j^{-1} \circ tau_i(x_i).$
+- So that a point $x_i$ from timestep $i$ can be mapped to timestep $j$ by: $x_j = \tau_j^{-1} \circ tau_i(x_i).$
+- To share on INN across time, the paper learns an INN $M$ conditioned on a per-timestep latent code $\Phi_i$ such that $u=M(x_i;\Phi_i)$.
+
+## Pixel-to-pixel matching
+- To find the correspondence of pixel $p_i$ in timestep $i$ in timestep $j$:
+  - First shoot a ray from orthographic camera, i.e., the ray is perpendicular to the image plane, this is under the assumption that camera motion and scene motion is entangled.
+  - Then sample $K$ points on the ray denoted as $\{x_i^k\}, mapping all these points to timestep $j$ by the method discussed above. At the same time, the color and opacity of these points can be computed as $F_{\theta}(M(x_i^k, \Phi_i))$.
+  - The corresponding 3D point of $p_i$ is computed as $\hat{x}_j=\Sigma_{k=1}^K T_k{\alpha_k}x_j^k$, where ${T_k}_{l=1}^{k-1}={\Pi}(1-\alpha_l)$.
 
